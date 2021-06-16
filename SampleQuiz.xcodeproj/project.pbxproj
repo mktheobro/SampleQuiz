@@ -13,6 +13,8 @@
 		1D542FE92679FBF400CC8238 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D542FE72679FBF400CC8238 /* Main.storyboard */; };
 		1D542FEB2679FBF600CC8238 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D542FEA2679FBF600CC8238 /* Assets.xcassets */; };
 		1D542FEE2679FBF600CC8238 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D542FEC2679FBF600CC8238 /* LaunchScreen.storyboard */; };
+		1D542FF62679FF5800CC8238 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D542FF52679FF5800CC8238 /* QuizViewController.swift */; };
+		1D542FF8267A024000CC8238 /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D542FF7267A024000CC8238 /* ScoreViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		1D542FEA2679FBF600CC8238 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D542FED2679FBF600CC8238 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1D542FEF2679FBF600CC8238 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D542FF52679FF5800CC8238 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		1D542FF7267A024000CC8238 /* ScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				1D542FE32679FBF400CC8238 /* SceneDelegate.swift */,
 				1D542FE52679FBF400CC8238 /* ViewController.swift */,
 				1D542FE72679FBF400CC8238 /* Main.storyboard */,
+				1D542FF7267A024000CC8238 /* ScoreViewController.swift */,
+				1D542FF52679FF5800CC8238 /* QuizViewController.swift */,
 				1D542FEA2679FBF600CC8238 /* Assets.xcassets */,
 				1D542FEC2679FBF600CC8238 /* LaunchScreen.storyboard */,
 				1D542FEF2679FBF600CC8238 /* Info.plist */,
@@ -139,7 +145,9 @@
 			files = (
 				1D542FE62679FBF400CC8238 /* ViewController.swift in Sources */,
 				1D542FE22679FBF400CC8238 /* AppDelegate.swift in Sources */,
+				1D542FF8267A024000CC8238 /* ScoreViewController.swift in Sources */,
 				1D542FE42679FBF400CC8238 /* SceneDelegate.swift in Sources */,
+				1D542FF62679FF5800CC8238 /* QuizViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

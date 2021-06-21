@@ -29,7 +29,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="スタート"/>
                                 <connections>
-                                    <segue destination="1Fp-Gb-LZ7" kind="presentation" id="1wx-A5-c1Y"/>
+                                    <segue destination="NFw-qc-6nz" kind="presentation" id="9kt-Ig-aUK"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -39,7 +39,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="20" y="89"/>
+            <point key="canvasLocation" x="-784.05797101449286" y="87.723214285714278"/>
         </scene>
         <!--Quiz View Controller-->
         <scene sceneID="DGM-KI-jLs">
@@ -123,6 +123,57 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y8C-47-2BX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="756.52173913043487" y="87.723214285714278"/>
+        </scene>
+        <!--Select Level View Controller-->
+        <scene sceneID="Msn-jl-bl2">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="NFw-qc-6nz" customClass="SelectLevelViewController" customModule="SampleQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="45P-Dy-ZA8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="難易度を選択してください" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OGF-Fz-Jm1">
+                                <rect key="frame" x="55" y="139" width="304" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Exj-7m-sCn">
+                                <rect key="frame" x="146" y="400" width="122" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="レベル１"/>
+                                <connections>
+                                    <action selector="levelButtonActionWithSender:" destination="NFw-qc-6nz" eventType="touchUpInside" id="VXI-8y-IyN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bi8-f3-gjb">
+                                <rect key="frame" x="146" y="486" width="122" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="レベル２"/>
+                                <connections>
+                                    <action selector="levelButtonActionWithSender:" destination="NFw-qc-6nz" eventType="touchUpInside" id="Ooz-aL-QVU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uYu-Ch-1vS">
+                                <rect key="frame" x="146" y="579" width="122" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="レベル３"/>
+                                <connections>
+                                    <action selector="levelButtonActionWithSender:" destination="NFw-qc-6nz" eventType="touchUpInside" id="Jzh-lK-lbM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Lia-SQ-JmH"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KdF-Kn-O1l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6" y="88"/>
         </scene>
         <!--Score View Controller-->
         <scene sceneID="mFq-IF-Pao">

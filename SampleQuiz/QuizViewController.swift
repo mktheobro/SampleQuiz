@@ -14,6 +14,7 @@ class QuizViewController: UIViewController {
     @IBOutlet var answerButton2: UIButton!
     @IBOutlet var answerButton3: UIButton!
     @IBOutlet var answerButton4: UIButton!
+    @IBOutlet var judgeImageview: UIImageView!
     
     var csvArray: [String] = []
     var quizArray: [String] = []
@@ -47,11 +48,28 @@ class QuizViewController: UIViewController {
         if sender.tag == Int(quizArray[1]){
             correctCount += 1
             print("正解")
+            judgeImageview.image = UIImage(named: "correct")
         }else{
             print("不正解")
+            judgeImageview.image = UIImage(named: "incorrect")
         }
         print("スコア:\(correctCount)")
-        nextQuiz()
+        //0.5秒後に○×を消す処理
+        judgeImageview.isHidden = false //２問目以降に○×が非表示になるのを避ける処理
+        answerButton1.isEnabled = false //◯×が表示中はボタンを押せなくする処理
+        answerButton2.isEnabled = false //◯×が表示中はボタンを押せなくする処理
+        answerButton3.isEnabled = false //◯×が表示中はボタンを押せなくする処理
+        answerButton4.isEnabled = false //◯×が表示中はボタンを押せなくする処理
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            self.judgeImageview.isHidden = true
+            self.answerButton1.isEnabled = true //◯×が表示中はボタンを押せなくする処理を打ち消す処理
+            self.answerButton2.isEnabled = true //◯×が表示中はボタンを押せなくする処理を打ち消す処理
+            self.answerButton3.isEnabled = true //◯×が表示中はボタンを押せなくする処理を打ち消す処理
+            self.answerButton4.isEnabled = true //◯×が表示中はボタンを押せなくする処理を打ち消す処理
+            self.nextQuiz() //ダブルクリックを防ぐためにこちらにnextQuizを移動
+        }
+        
+        
     }
     
     func nextQuiz() {

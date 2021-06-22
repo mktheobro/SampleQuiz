@@ -170,6 +170,9 @@
                         <viewLayoutGuide key="safeArea" id="Lia-SQ-JmH"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <segue destination="1Fp-Gb-LZ7" kind="presentation" identifier="toQuizVC" id="Xna-fJ-MGi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KdF-Kn-O1l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

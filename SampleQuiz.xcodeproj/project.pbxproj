@@ -19,6 +19,8 @@
 		1DABA7B626802A4D00EFBF88 /* correct.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DABA7B426802A4D00EFBF88 /* correct.png */; };
 		1DABA7B726802A4D00EFBF88 /* incorrect.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DABA7B526802A4D00EFBF88 /* incorrect.png */; };
 		1DABA7B92680EC9F00EFBF88 /* SelectLevelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DABA7B82680EC9F00EFBF88 /* SelectLevelViewController.swift */; };
+		1DABA7BB26823C3F00EFBF88 /* quiz2.csv in Resources */ = {isa = PBXBuildFile; fileRef = 1DABA7BA26823C3F00EFBF88 /* quiz2.csv */; };
+		1DABA7BF26823DAE00EFBF88 /* quiz3.csv in Resources */ = {isa = PBXBuildFile; fileRef = 1DABA7BE26823DAE00EFBF88 /* quiz3.csv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		1DABA7B426802A4D00EFBF88 /* correct.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = correct.png; sourceTree = "<group>"; };
 		1DABA7B526802A4D00EFBF88 /* incorrect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = incorrect.png; sourceTree = "<group>"; };
 		1DABA7B82680EC9F00EFBF88 /* SelectLevelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectLevelViewController.swift; sourceTree = "<group>"; };
+		1DABA7BA26823C3F00EFBF88 /* quiz2.csv */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = quiz2.csv; sourceTree = "<group>"; };
+		1DABA7BE26823DAE00EFBF88 /* quiz3.csv */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = quiz3.csv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,8 @@
 			isa = PBXGroup;
 			children = (
 				1D542FF9267C39AC00CC8238 /* quiz.csv */,
+				1DABA7BA26823C3F00EFBF88 /* quiz2.csv */,
+				1DABA7BE26823DAE00EFBF88 /* quiz3.csv */,
 				1D542FE02679FBF400CC8238 /* SampleQuiz */,
 				1D542FDF2679FBF400CC8238 /* Products */,
 			);
@@ -150,12 +156,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DABA7BB26823C3F00EFBF88 /* quiz2.csv in Resources */,
 				1DABA7B626802A4D00EFBF88 /* correct.png in Resources */,
 				1DABA7B726802A4D00EFBF88 /* incorrect.png in Resources */,
 				1D542FEE2679FBF600CC8238 /* LaunchScreen.storyboard in Resources */,
 				1D542FEB2679FBF600CC8238 /* Assets.xcassets in Resources */,
 				1D542FE92679FBF400CC8238 /* Main.storyboard in Resources */,
 				1D542FFA267C39AC00CC8238 /* quiz.csv in Resources */,
+				1DABA7BF26823DAE00EFBF88 /* quiz3.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -56,7 +56,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="qiA-9z-nGD">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="qiA-9z-nGD">
                                 <rect key="frame" x="87" y="149" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -200,6 +200,16 @@
                                 <state key="normal" title="トップに戻る"/>
                                 <connections>
                                     <action selector="toTopButtonAction:" destination="2Hf-zc-aR0" eventType="touchUpInside" id="sxs-sV-bKe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tcb-0B-hXc">
+                                <rect key="frame" x="91" y="264" width="243" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="結果をシェアする"/>
+                                <connections>
+                                    <action selector="shareButtonAction:" destination="2Hf-zc-aR0" eventType="touchUpInside" id="TwK-52-QRG"/>
+                                    <action selector="toTopButtonAction:" destination="2Hf-zc-aR0" eventType="touchUpInside" id="PUS-52-Pqe"/>
                                 </connections>
                             </button>
                         </subviews>

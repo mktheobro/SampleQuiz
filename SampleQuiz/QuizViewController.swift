@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import GoogleMobileAds
 
 class QuizViewController: UIViewController {
     @IBOutlet var quizNumberLabel: UILabel!
@@ -16,6 +17,7 @@ class QuizViewController: UIViewController {
     @IBOutlet var answerButton4: UIButton!
     @IBOutlet var judgeImageview: UIImageView!
     
+    var bannerView: GADBannerView!
     var csvArray: [String] = []
     var quizArray: [String] = []
     var quizCount = 0
@@ -24,6 +26,12 @@ class QuizViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        bannerView = GADBannerView(adSize: kGADAdSizeBanner)
+        bannerView.adUnitID = ""
+        bannerView.rootViewController = self
+        bannerView.load(GADRequest())
+        addBannerViewToView(bannerview)
         
         print("選択したのはレベル\(selectLebel)")
         
@@ -110,6 +118,27 @@ class QuizViewController: UIViewController {
             print("エラー")
         }
         return csvArray
+    }
+    
+    func addBannerViewToView(_ bannerView: GADBannerView) {
+        bannerView.translatesAutoresizaingMaskIntoConstraints = false
+        view.addSubview(bannerView)
+        view.addConstraints(
+            [NSLayoutConstraint(item: bannerView,
+                                attribute: .bottom,
+                                relatedBy: .equal,
+                                toItem: view.safeAreaLayoutGuide,
+                                attribute: .bottom,
+                                multiplier: 1,
+                                constant: 0),
+             NSLayoutConstraint(item: bannerView,
+                                attribute: .centerX,
+                                relatedBy: .equal,
+                                toItem: view,
+                                attribute: .centerX,
+                                multiplier: 1,
+                                constant: 0)
+            ])
     }
     
     /*

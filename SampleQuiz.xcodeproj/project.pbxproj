@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D079B6E268A399000DB8D16 /* launchImageView.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D079B6D268A399000DB8D16 /* launchImageView.png */; };
 		1D542FE22679FBF400CC8238 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D542FE12679FBF400CC8238 /* AppDelegate.swift */; };
 		1D542FE42679FBF400CC8238 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D542FE32679FBF400CC8238 /* SceneDelegate.swift */; };
 		1D542FE62679FBF400CC8238 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D542FE52679FBF400CC8238 /* ViewController.swift */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D079B6D268A399000DB8D16 /* launchImageView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launchImageView.png; sourceTree = "<group>"; };
 		1D542FDE2679FBF400CC8238 /* SampleQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D542FE12679FBF400CC8238 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1D542FE32679FBF400CC8238 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +60,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D079B6C268A398F00DB8D16 /* launchImage */ = {
+			isa = PBXGroup;
+			children = (
+				1D079B6D268A399000DB8D16 /* launchImageView.png */,
+			);
+			path = launchImage;
+			sourceTree = "<group>";
+		};
 		1D542FD52679FBF400CC8238 = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +102,7 @@
 				1D542FEA2679FBF600CC8238 /* Assets.xcassets */,
 				1D542FEC2679FBF600CC8238 /* LaunchScreen.storyboard */,
 				1D542FEF2679FBF600CC8238 /* Info.plist */,
+				1D079B6C268A398F00DB8D16 /* launchImage */,
 				1DABA7B326802A4D00EFBF88 /* image */,
 			);
 			path = SampleQuiz;
@@ -182,6 +193,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D079B6E268A399000DB8D16 /* launchImageView.png in Resources */,
 				1DABA7BB26823C3F00EFBF88 /* quiz2.csv in Resources */,
 				1DABA7B626802A4D00EFBF88 /* correct.png in Resources */,
 				1DABA7B726802A4D00EFBF88 /* incorrect.png in Resources */,
